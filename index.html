@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
     <title>Happy Birthday Hamna!</title>
     <style>
         :root {
+            color-scheme: light only;
             --bg-color: #ffe5ec;
             --card-bg: #ffffff;
             --primary-pink: #ffb7c5;
@@ -270,9 +272,12 @@
         @media(max-width: 768px) {
             .container {
                 height: auto;
-                min-height: 550px;
+                min-height: 0;
+                overflow: visible;
             }
             .screen {
+                position: static;
+                height: auto;
                 grid-template-columns: 1fr;
             }
             .visual-side {
